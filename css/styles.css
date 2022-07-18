@@ -378,10 +378,12 @@ footer > .container > .logo {
   background-color: var(--backlight-color);
 }
 
-.portfolio-list {
+/* .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  width: 1170px;
+  margin: 0 auto;
+  padding-left: 0;
   padding-bottom: 94px;
 }
 
@@ -396,6 +398,25 @@ footer > .container > .logo {
 
 .portfolio-item:nth-child(n + 7) {
   margin-bottom: 0;
+} */
+.portfolio-container {
+  width: 1170px;
+  margin: 0 auto;
+  padding-bottom: 94px;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+  padding-left: 0;
+}
+
+.portfolio-item {
+  flex-basis: calc(100% / 3 - 30px);
+
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .portfolio-link {
